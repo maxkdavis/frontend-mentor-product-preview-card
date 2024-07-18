@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  padding-top: 2em; /*28px*/
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  /* border: 1px solid red; */
+}
+
+.hero-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+.content-container {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5em; /*21 px*/
+}
