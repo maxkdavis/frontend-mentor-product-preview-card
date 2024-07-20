@@ -19,7 +19,6 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 90%;
-  /* border: 1px solid red; */
 }
 
 .hero-img {
@@ -98,4 +97,30 @@ body {
   gap: 0.5rem;
   width: 100%;
   padding: 1rem 0;
+}
+
+/* Media Query: Desktop Layout */
+@media (min-width: 769px) {
+  .wrapper {
+    display: flex;
+    max-width: 600px;
+  }
+
+  .img-container,
+  .content-container {
+    width: 50%;
+  }
+
+  .content-container {
+    box-sizing: border-box;
+  }
+
+  .hero-img {
+    content: url(images/image-product-desktop.jpg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    display: block;
+    width: 100%;
+  }
 }
