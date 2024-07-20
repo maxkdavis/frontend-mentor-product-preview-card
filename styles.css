@@ -62,3 +62,40 @@ body {
   line-height: 23px;
   margin-bottom: 1rem; /*16px*/
 }
+
+.price-box {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.price-current {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-old {
+  color: hsla(228, 12%, 48%, 1);
+  align-self: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8125rem; /*13px*/
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.btn-add {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 4px;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem 0;
+}
