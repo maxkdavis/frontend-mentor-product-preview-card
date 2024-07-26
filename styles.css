@@ -106,10 +106,6 @@ body {
 
 /* Media Query: Desktop Layout */
 @media (min-width: 650px) {
-  body {
-    margin: 25% auto;
-  }
-
   .wrapper {
     display: flex;
     max-width: 650px;
