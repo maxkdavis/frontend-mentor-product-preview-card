@@ -41,7 +41,7 @@ body {
   font-size: 0.75rem; /*12px*/
   font-weight: 500;
   letter-spacing: 5px;
-  margin-bottom: 0.75rem; /*12px*/
+  margin-bottom: 1rem; /*12px*/
   text-transform: uppercase;
 }
 
@@ -50,7 +50,7 @@ body {
   font-family: 'Fraunces', serif;
   font-size: 2rem; /*32px*/
   line-height: 2rem; /*32px*/
-  margin-bottom: 0.75rem; /*12px*/
+  margin-bottom: 1.5rem; /*16px*/
 }
 
 .perfume-description {
@@ -87,7 +87,7 @@ body {
 .btn-add {
   background-color: hsl(158, 36%, 37%);
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   color: hsl(0, 0%, 100%);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
@@ -99,11 +99,20 @@ body {
   padding: 1rem 0;
 }
 
+.btn:hover {
+  background-color: #1a4032;
+  cursor: pointer;
+}
+
 /* Media Query: Desktop Layout */
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+  body {
+    margin: 25% auto;
+  }
+
   .wrapper {
     display: flex;
-    max-width: 800px;
+    max-width: 650px;
   }
 
   .img-container,
@@ -112,11 +121,13 @@ body {
   }
 
   .content-container {
-    /* box-sizing: border-box; */
     border-top-right-radius: 10px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding: 1.75rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .hero-img {
